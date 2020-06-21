@@ -1,0 +1,210 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+
+:root{
+    --title-color: #331a66;
+    --primary-color: #34cb79;
+}
+*{
+    margin:0;
+    padding:0;
+}
+html {
+    background-color: #dbedff;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #b0d7ff;
+    -webkit-animation-smothing: antialiased;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Box model */
+/* Modelo de caja
+largura, altura, espacios, preenchimentos, alineamientos, posicion
+bordes, cor, fondos, manera vista por el HTML display */
+
+/* Control de tamaño foto */
+#page-home {
+    height: 100vh;
+    background: url("../acces/home-background.svg") no-repeat;
+    background-position: 40vw 10vw;
+}
+
+#page-home .content {
+    width: 90%;
+    height: 100%;
+    /* puede ser width en porcentaje o pixeles */
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-home header {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-home header a{  
+    display: flex;
+    color:black;
+    font-weight: 700;
+}
+
+#page-home header a span{
+    margin-right: 16px;
+    display: flex;
+    background-image: url(../acces/log-in.svg);
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main{
+    max-width: 100%;
+    flex:1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20%;
+    align-items: center;
+}
+
+#page-home main h1{
+    font-size: 54px;
+    color: black;
+}
+
+#page-home main p{
+    font-size: 20px;
+    line-height: 38px ;
+    margin-top: 24px;
+}
+/* formato letra dentro de boton*/
+#amarillo{
+    width: 100%;
+    max-width: 360px;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    background: yellow;
+    transition: 400ms;
+    font-weight: bold;
+    color:white;
+}
+/* cambio color boton al pasar mouse encima de el */
+#amarillo:hover{
+    background-color: rgb(227, 227, 162);
+}
+
+#amarillo strong{
+    flex:1;
+    color: black;
+    text-align: center;
+}
+
+/* formato letra dentro de boton*/
+#azul{
+    width: 100%;
+    max-width: 360px;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    background: blue;
+    transition: 400ms;
+    font-weight: bold;
+    color:white;
+}
+/* cambio color boton al pasar mouse encima de el */
+#azul:hover{
+    background-color: rgb(100, 107, 167);
+}
+
+#azul strong{
+    flex:1;
+    color: black;
+    text-align: center;
+}
+
+/* formato letra dentro de boton*/
+#rojo{
+    width: 100%;
+    max-width: 360px;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    background: red;
+    transition: 400ms;
+    font-weight: bold;
+    color:white;
+}
+/* cambio color boton al pasar mouse encima de el */
+#rojo:hover{
+    background-color: rgb(244, 128, 128);
+}
+
+#rojo strong{
+    flex:1;
+    color: black;
+    text-align: center;
+}
+
+@media(max-width: 900px) {
+#page-home{
+    background-position: 70vw;
+}
+#page-home .content{
+    align-items: center;
+    text-align: center;
+}
+#page-home header a{
+    position:absolute;
+    margin-top:590px;
+    left:50%;
+    transform: translateX(-63%);
+}
+
+#page-home main{
+    align-items:center;
+    display: flex;
+    height: 500px;
+    width: 500px;
+}
+}
+
+/* play pause */
+
+
+
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: var(--primary);
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    background-color: var(--primary);
+  }
+  
+  input[type="range"]::-ms-thumb {
+    background-color: var(--primary);
+  }
